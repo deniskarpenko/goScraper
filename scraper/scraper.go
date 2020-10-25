@@ -15,3 +15,4 @@ func (s *Scraper) GetUrl() {
 func (s *Scraper) SetUrl(url string) {
 	s.url = url
 }
+
