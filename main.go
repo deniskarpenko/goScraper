@@ -1,9 +1,13 @@
 package main
 
-import "./scraper"
+import (
+	"./scraper"
+	"./server"
+)
 
 func main() {
 	s := scraper.Scraper{}
 	s.SetUrl("UTL")
-	s.GetUrl()
+	serv := server.Server{}
+	serv.Start()
 }
